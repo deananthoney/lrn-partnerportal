@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>LRN PARTNER PORTAL</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom-style.css" rel="stylesheet">
+    <link href="css/mediaquery.css" rel="stylesheet">
+    
+    <!-- Fontawesome styles for this template -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!--Course Description ease -->
+    <script src="js/jquery-1.9.1.js"></script>
+
+
+
+    <script type="text/javascript">
+    $(window).load(function(){
+    jQuery('.accordion dt').click(function() {
+    $('.accordion dt').find('i').removeClass('fa-minus'); // Hides the minus sign on click
+    $(this).find('i').addClass('fa-plus fa-minus'); // add this line
+    jQuery('.accordion dt').removeClass('active');
+    jQuery('.accordion_content').slideUp('normal');
+
+    if(jQuery(this).next().is(':hidden') == true) {
+        jQuery(this).addClass('active');
+        jQuery(this).next().slideDown('normal');
+    }
+
+    });
+
+    jQuery('.accordion_content').hide();
+    });//]]> 
+
+    </script>
+
+
+
+    <!--END-->
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]>
+      <link href="css/ie9.css" rel="stylesheet">
+    <![endif]-->
+  </head>
+
+<body role="document" class="blueGradient">
+	
+    <!--navigation starts-->
+    <div class="container">
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <!--<span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>-->
+                Toggle Menu
+              </button>
+              <a class="navbar-brand" href="index.html" title="LRN"><img src="images/lrn-logo-inside.jpg" alt="LRN"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html" title="Lrn Home">Lrn Home</a></li>
+                    <li><a href="contact.html" title="Contact">Contact</a></li>
+                </ul>
+            </div>
+          
+        </nav>
+    </div>
+    <!--navigation ends-->
+
+<!--body container starts-->
+    <div class="container">
+
+<!--Search -->
+
+<div class="formSec">
+  <div class="loginSec offWhiteTxt">
+ <div class="formBlock">
+ <div class="form-group right-inner-addon">
+            <a href="#"><i class="fa fa-search"></i></a>
+             <input type="search" class="form-control" placeholder="Fcpa">
+                        
+<!-- Search Ends -->
+
+<!-- Show All -->
+
+<div class="showall">
+   <a href="results.html"> <button class="btn-left" type="submit">ALL</button></a>
+ <a href="results.html"><button class="btn-right"  type="submit">MOBILE ONLY</button></a>
+
+     
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- Show All  Ends-->
+
+<div class="resultsblock">
+<dl class="accordion">
+<ul>
+<li class="game"><a href="#"><span><i class="fa fa-gamepad"></i></span>GAME</a>
+<p>
+The Company Code: Putting</br>
+Princples into Practice
+<h1>ETH999</h1>
+<dt><span>COURSE DESCRIPTION</span><i class="accordion_icon fa fa-plus"></i></dt>
+<dd class="accordion_content">
+Developed as an alternative to DBA216 and DBA217,this course offers a "next generation" perspective on the Foriegn Corrupt Practices Act (FCPA) and its rules for doing business internationally.It embeds clear legal definitions and guidelines into a continuous storyline
+centered on Sara Shepard, a manager at fictitius company Global Technology Partners.
+</br>
+
+
+As Sara spearheads an expansion project in region where bribery of public officials is common, your employees will learn about FCPA compliance and some of practical challenges
+that arise for companies commited to doing business with intregity.
+</dd>
+
+</li>
+
+
+<li class="foundation"><a href="#"><span><i class="fa fa-anchor"></i><span>FOUNDATIONAL COURSE</a>
+<p>
+Navigating the FCPA
+<h1>DBA218-A72EN(DESKTOP ONLY)</br></h1>
+<dt><span>COURSE DESCRIPTION</span><i class="accordion_icon fa fa-plus"></i></dt>
+<dd class="accordion_content">
+Developed as an alternative to DBA216 and DBA217,this course offers a "next generation" perspective on the Foriegn Corrupt Practices Act (FCPA) and its rules for doing business internationally.It embeds clear legal definitions and guidelines into a continuous storyline
+centered on Sara Shepard, a manager at fictitius company Global Technology Partners.
+</br>
+
+
+As Sara spearheads an expansion project in region where bribery of public officials is common, your employees will learn about FCPA compliance and some of practical challenges
+that arise for companies commited to doing business with intregity.
+</dd>
+
+
+
+
+<li class="vignette"><a href="#"><span><i class="fa fa-video-camera"></i></span>VIGNETTE</a>
+<p>
+Doing Business Globally</br>
+
+<h1>DBA550</h1>
+<dt><span>COURSE DESCRIPTION</span><i class="accordion_icon fa fa-plus"></i></dt>
+<dd class="accordion_content">
+Developed as an alternative to DBA216 and DBA217,this course offers a "next generation" perspective on the Foriegn Corrupt Practices Act (FCPA) and its rules for doing business internationally.It embeds clear legal definitions and guidelines into a continuous storyline
+centered on Sara Shepard, a manager at fictitius company Global Technology Partners.
+</br>
+
+
+As Sara spearheads an expansion project in region where bribery of public officials is common, your employees will learn about FCPA compliance and some of practical challenges
+that arise for companies commited to doing business with intregity.
+</dd>
+
+
+<li class="experiment"><a href="#"><span><i class="fa fa-cogs"></i><span></i>EXPERIMENTAL LEARNING TOOLKIT</a>
+<p>
+Managing Corruption Risk</br>
+the Supply Chain</br>
+<h1>SCM130</h1>
+<dt><span>COURSE DESCRIPTION</span><i class="accordion_icon fa fa-plus"></i></dt>
+<dd class="accordion_content">
+Developed as an alternative to DBA216 and DBA217,this course offers a "next generation" perspective on the Foriegn Corrupt Practices Act (FCPA) and its rules for doing business internationally.It embeds clear legal definitions and guidelines into a continuous storyline
+centered on Sara Shepard, a manager at fictitius company Global Technology Partners.
+</br>
+
+
+As Sara spearheads an expansion project in region where bribery of public officials is common, your employees will learn about FCPA compliance and some of practical challenges
+that arise for companies commited to doing business with intregity.
+</dd>
+
+    
+</dl>
+
+
+</ul>
+</div>
+
+
+<!-- Results Ends-->
+      </div> 
+    
+    <!--body container ends-->
+
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    
+    <!-- Custom js goes here -->
+    <script src="js/common.js"></script>
+</body>
+</html>
+

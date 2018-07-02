@@ -1,0 +1,364 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../fonts/proximanova-bold-webfont.eot');
+    src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('../fonts/proximanova-light-webfont.eot');
+    src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-light-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-light-webfont.woff') format('woff'),
+         url('../fonts/proximanova-light-webfont.ttf') format('truetype'),
+         url('proximanova-light-webfont.svg#proxima_novalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../fonts/proximanova-regular-webfont.eot');
+    src: url('../fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-regular-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('../fonts/proximanova-regular-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*------------GENERAL------------*/	
+body {
+	background-color:#fafaf5;
+	color:#3C4350;
+	 font-family: 'proxima_nova_rgregular';
+	font-weight:normal;
+	font-size:1.538em;
+	line-height:1.688em;
+	}
+.container {
+	/*max-width:320px;*/ 
+	width:100%;
+	padding:0;
+	
+	}
+.blueGradient {
+	background: #2373a8; 
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIzNzNhOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzZmFmYjEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left, #2373a8 0%, #3fafb1 100%); 
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#2373a8), color-stop(100%,#3fafb1)); 
+	background: -webkit-linear-gradient(left, #2373a8 0%,#3fafb1 100%); 
+	background: -o-linear-gradient(left, #2373a8 0%,#3fafb1 100%); 
+	background: -ms-linear-gradient(left, #2373a8 0%,#3fafb1 100%); 
+	background: linear-gradient(to right, #2373a8 0%,#3fafb1 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2373a8', endColorstr='#3fafb1',GradientType=1 );
+	}
+/*------------COMMON------------*/	
+a:focus, a:hover {text-decoration:none; outline:none;}
+ul, li, ol {list-style-type:none;}
+ul {margin:0; padding:0;}
+p {margin:0; padding-bottom:15px;}	
+h1, h2, h3, h4, h5, h6 {padding:0; margin:0;}
+h1 {font-family: 'proxima_novalight';font-weight: normal;font-size:1.663em; line-height:1.875em; color:#F8F8F2; text-transform:uppercase; padding-bottom:0.375em;}
+h2 {font-family: 'proxima_novalight';font-weight: normal; font-size:1.350em; line-height:1.563em; color:#F8F8F2; text-transform:uppercase; padding-bottom:0.938em;}
+.offWhiteTxt {color:#F8F8F2;}
+.offWhiteTxt a {color:#F8F8F2;}
+.nobtmPad {padding-bottom:0 !important;}
+.norgtMar{margin-right:0 !important;}
+
+	
+/*------------NAVIGGATION STYLING------------*/	
+.navbar-inverse {background-color:#f8f8f2;border:0;}
+.navbar {border-radius:0px; margin-bottom:0; padding:20px 20px 0 20px;}
+.navbar-brand {height:auto; padding:0; line-height:0;}
+.navbar-inverse .navbar-toggle {border:0;}
+.navbar-inverse .navbar-toggle .icon-bar {background-color:#3e4351;}
+.navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus { background-color:transparent;}
+/*------------SHOW COLLAPSE MENU FROM DESKTOP------------*/
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-heade {width:100%;}
+.navbar-toggle {display: block; margin:0; padding:0; border-radius:0px;}
+.navbar-toggle.toggleOpen {background:url(../images/toggle-menu.png) no-repeat 0 100%; }
+.navbar-toggle {width:0.938em; height:0.875em; background:url(../images/toggle-menu.png) no-repeat 0 0;  text-indent:-5000000px;}
+.navbar-collapse.collapse {display:none !important;}
+.navbar-collapse.collapse.in {display:block !important; background-color:#f8f8f2; border-bottom:4px solid #326fa8; margin:0 -1.350em;}
+.navbar-header {float: none;}
+.navbar-nav {float: none!important;margin:0.625em 0 0 0; font-family: 'proxima_nova_rgbold'; text-transform:uppercase; padding:0 0.250em;}
+.navbar-nav>li {float: none; border-bottom:2px solid #f1f3ef; padding:0.625em 0;}
+.navbar-nav>li>a {padding:0; display:block;}
+.navbar-inverse .navbar-nav > li > a {color:#3d4550;}
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:focus, 
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {background-color:transparent;color:#2e4376;}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {border:0;}
+
+/*------------LOGIN BLOCK------------*/
+.loginSec {padding:2.500em;}
+/***.formBlock {padding-bottom:10px;}**next**/
+.form-group, .submitBtns {margin-bottom:0.813em;}
+.form-group label { font-family: 'proxima_nova_rgbold';font-weight: normal;text-transform:uppercase; color:#F8F8F2;}
+.form-group .form-control {border-radius:0px; outline:none; border:0;height:2.675em;text-transform:uppercase; background-color:#fafaf5; }
+.btn {font-family: 'proxima_nova_rgbold'; font-weight: normal;font-size:1.034em; line-height:1.263em;margin-right:0.313em;padding:0.825em 1.000em 0.725em 1.000em;border:0;border-radius:0px;outline:none;text-transform:uppercase; outline:none;}
+.btn-primary {background-color:#000; color:#F8F8F2;  }
+.btn-primary-full { display:block; width:100%;}
+.right-inner-addon {position: relative;}
+.right-inner-addon input {padding-right:1.875em;}
+.right-inner-addon i {position:absolute;right:0px;padding:10px 12px;pointer-events:none;color:#fff; font-size:18px;width:50px;background:#000;}
+
+/*------------SEARCH POPULAR LIST------------*/
+ul.populartopList {font-size:1.034em; line-height:1.250em;font-family: 'proxima_nova_rgbold';font-weight: normal; text-transform:uppercase;}
+ul.populartopList li {margin-bottom:0.625em; }
+ul.populartopList li a {
+	color:#F8F8F2; 
+	padding:10px;
+	display:block;w
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6996be+0,7dbdc2+100 */
+	background: #6996be; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY5OTZiZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGJkYzIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left, #6996be 0%, #7dbdc2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#6996be), color-stop(100%,#7dbdc2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #6996be 0%,#7dbdc2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #6996be 0%,#7dbdc2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #6996be 0%,#7dbdc2 100%); /* IE10+ */
+	background: linear-gradient(to right, #6996be 0%,#7dbdc2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6996be', endColorstr='#7dbdc2',GradientType=1 ); /* IE6-8 */
+	 }
+/*------------SEARCH RESULT LIST------------*/
+
+/*Results List */
+
+.form-search{
+padding:6px 12px;
+display:block;
+width:100%;
+
+}
+.form-group, .submitBtns {
+margin-bottom: 0.813em;
+
+}
+
+.submitBtns2{
+text-align:center;
+width:100% ;
+padding:20px 12px;
+}
+
+.btn-secondary {background-color:#2970A7; color:#F8F8F2;  width: 100%; }
+.btn-secondary-full { display:block; width:100%;}
+
+.showall{
+width:100%;
+}
+.btn-left {
+font-family: 'proxima_nova_rgbold'; font-weight: normal;font-size:1.034em; line-height:1.263em;padding:0.825em 1.000em 0.725em 1.000em;border:0;border-radius:0px;outline:none;text-transform:uppercase; outline:none;
+background: #000;
+color:#FFF; 
+float:left;
+width:50%;
+
+}
+
+.btn-left:hover{
+background: #2570a7;
+color:#fff; 
+
+}
+
+.btn-right{
+font-family: 'proxima_nova_rgbold'; font-weight: normal;font-size:1.034em; line-height:1.263em;padding:0.825em 0em 0.725em;border:0;border-radius:0px;outline:none;text-transform:uppercase; outline:none;
+background: #000;
+color:#FFF; 
+width:50%;
+float:right;
+
+}
+
+.btn-right:hover{
+background: #2570a7;
+color:#FFF; 	
+
+}
+
+
+.resultsblock {
+background:#f8f7f2 ;
+margin: -6px;
+width:100%;
+height:800px; /***height of total 4 white boxes****/
+overflow:hidden;
+}
+
+
+.gallery{
+list-style-type: none;
+}
+
+li.game  ,li.foundation ,li.vignette,li.experiment {
+font-family: 'proxima_nova_rgbold';
+font-weight: normal;
+background:#FFF;
+color:#2570a7; 
+padding: 10px 19px;
+height: 236px;
+width: 100%;
+}
+
+li.game span ,li.foundation span,li.vignette span,li.experiment span{
+padding: 4px;
+color:#2570a7; 
+}
+
+ul li.game ,ul li.foundation  ,ul li.vignette ,ul li.experiment  {
+background: #f8f7f2 url("../images/buttons/videoplayer.png") no-repeat scroll 97% 29%;
+}
+
+
+li.game p,li.foundation p ,li.vignette p,li.experiment p  {
+color:#3c4350;
+padding: 8px 8px;
+
+}
+
+
+/**********Styles for White Boxunder Results List***/
+
+ul li.game, ul li.foundation,ul li.vignette ,ul li.experiment {
+background-color: #f8f7f2;
+width:100%;
+height: auto;
+z-index:100;
+
+}
+
+
+
+
+/**
+ul li.game{
+
+height:300px;	
+}
+
+ul li.foundation{
+
+height:300px;	
+}
+
+
+ul li.vignette {
+
+height:300px;	
+}
+
+ul li.experiment {
+
+height:300px;	
+}
+
+************/
+li.game  img,li.podcast img ,li.vignette img ,li.experiment img{
+padding: 8px ;
+
+}
+
+
+/****Results h1-h2***/
+
+li.game h1{
+font-weight:normal;font-size:1.034em;color:#000;padding:10px;line-height:0;
+}
+
+
+li.game h2{
+text-decoration:none; font-weight:bold;color:#42b5b2;font-size:1.034em;padding:10px;line-height:0;font-family: 'proxima_nova_rgbold';font-weight: normal;
+}
+
+
+li.foundation h1{
+font-weight:normal;font-size:1.034em;color:#000;padding:10px;line-height:0;
+}
+
+
+li.foundation h2{
+text-decoration:none; font-weight:bold;color:#42b5b2;font-size:1.034em;padding:10px;line-height:0;font-family: 'proxima_nova_rgbold';font-weight: normal;
+}
+
+
+li.vignette h1{
+font-weight:normal;font-size:1.034em;color:#000;padding:10px;line-height:0;
+}
+
+
+li.vignette  h2{
+text-decoration:none; font-weight:bold;color:#42b5b2;font-size:1.034em;padding:10px;line-height:0;font-family: 'proxima_nova_rgbold';font-weight: normal;
+}
+
+
+li.experiment h1{
+font-weight:normal;font-size:1.034em;color:#000;padding:10px;line-height:0;
+}
+
+
+li.experiment h2{
+text-decoration:none; font-weight:bold;color:#42b5b2;font-size:1.034em;padding:10px;line-height:0;font-family: 'proxima_nova_rgbold';
+font-weight: normal;
+}
+/****h1-h2***/
+
+
+
+
+/*****Accordion*****/
+ul li.gam .accordione{
+background-color: #FFF;
+width:100%;
+height: 265px;
+
+
+}
+
+.accordion dt {
+margin: 0px;
+padding:10px 5px;
+display: block;
+cursor: pointer;
+overflow: hidden;
+
+}
+
+.accordion dt span {
+float: left;
+font-size: 1.063em;
+font-family: 'proxima_nova_rgbold';
+color: #46b3b1;
+}
+
+.accordion dt .accordion_icon {
+float:left;
+padding:8px 8px;
+color: #42b5b2;
+}
+
+.accordion dt.active {
+
+}
+
+.accordion_content {
+margin: 0;
+padding: 0px;
+ color: #3c4350;
+
+}	
+
+
+/* Results End * /
